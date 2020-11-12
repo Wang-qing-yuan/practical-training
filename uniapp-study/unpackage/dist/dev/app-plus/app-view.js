@@ -1583,7 +1583,7 @@ var render = function() {
     "v-uni-view",
     {
       class: _vm._$g(0, "c"),
-      staticStyle: { height: "100vh" },
+      staticStyle: { height: "auto" },
       attrs: { _i: 0 }
     },
     [
@@ -1730,7 +1730,10 @@ var render = function() {
             "v-uni-view",
             {
               staticClass: _vm._$g(23, "sc"),
-              staticStyle: { "padding-top": "100rpx" },
+              staticStyle: {
+                "padding-top": "100rpx",
+                "padding-bottom": "50rpx"
+              },
               attrs: { _i: 23 }
             },
             [

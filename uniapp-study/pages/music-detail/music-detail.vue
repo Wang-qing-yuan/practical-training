@@ -1,6 +1,6 @@
 <template>
 	<!-- 根据nightStatus的值切换白天和黑夜模式 -->
-	<view style="height: 100vh;" :class="nightStatus?'nightTheme':''">
+	<view style="height: auto;" :class="nightStatus?'nightTheme':''">
 		<!-- 歌曲信息 -->
 		<view class="d-inline-block w-100 text-center py-4">
 			<view>
@@ -49,7 +49,7 @@
 				<view class="mx-5"><my-icon iconId="icon-bofang1" iconSize="80"></my-icon></view>
 				<view class="ml-2"><my-icon iconId="icon-xiayixiang" iconSize="85"></my-icon></view>
 			</view>
-			<view class="flex-center font text-light-black" style="padding-top: 100rpx;">
+			<view class="flex-center font text-light-black" style="padding-top: 100rpx;padding-bottom: 50rpx;">
 				<view class="flex flex-column align-center">
 					<my-icon iconId="icon-icon--" iconSize="60"></my-icon>
 					<text class="pl-1">播放列表</text>
@@ -64,6 +64,8 @@
 				</view>
 			</view>
 		</view>
+		
+		
 		<!-- 歌手具体信息  fixed-bottom-->
 		<view class=" shadow p-2" style="height: 260rpx; border-radius: 30rpx;position: relative;">
 			<view class="flex justify-between">
